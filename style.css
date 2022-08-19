@@ -1,0 +1,117 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+/* End CSS reset */
+
+body {
+    background-color: #282826;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nums {
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 18pt;
+    font-weight: 700;
+    color: #282826;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.center {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.buttons {
+    background-color: #F6D20A;
+    font-size: 14pt;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    color: #282826;
+    padding: 13px;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+}
+
+h2 {
+  color: #282826;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+@keyframes zoom {
+  from {
+    font-size: 34px;
+    border: 4px solid #282826;
+  }
+  to {
+    font-size: 30px;
+  }
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bolder;
+  background-color: #F6D20A;
+  padding: 15px;
+  border-radius: 12px;
+  display: none;
+  border: 4px solid white;
+  animation: zoom 0.5s alternate-reverse infinite;
+}
+
+#restart {
+  display: none;
+}

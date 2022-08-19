@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div><br>
+        <div class="center">
+            <img src="logo.svg" height="200px">
+        </div>
+        <div class="center">
+            <h1>Quantos participantes no sorteio?</h1>
+        </div><br><br>
+        <div class="center">
+            <input type="number" id="num2" class="nums">
+            <button onclick="sortear()" type="button" id="button1" class="buttons">SORTEAR</button>
+        </div><br>
+        <div class="center">
+            <h2 id="result"></h2>
+        </div><br>
+        <div id="restart" class="center" style="margin-top: 15px ;">
+            <button onclick="restart()" type="button" id="button1" class="buttons">RECOMEÇAR</button>
+        </div>
+    </div>
+</body>
+</html>
